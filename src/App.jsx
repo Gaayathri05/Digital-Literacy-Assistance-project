@@ -1,3 +1,4 @@
+import ScholarshipService from './components/scholarship/ScholarshipService';
 import { useState, useRef, useEffect, useCallback } from "react";
 
 /* ═══════════════════════════════════════════════════════════
