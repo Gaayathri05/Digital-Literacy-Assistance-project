@@ -952,7 +952,11 @@ export default function App() {
       )}
 
       {/* ════════ CHAT ════════ */}
-      {screen==="chat"&&service&&(
+      {screen==="chat"&&service&&service.id==="scholarship"&&(
+        <ScholarshipService onBack={()=>setScreen("services")}/>
+      )}
+
+      {screen==="chat"&&service&&service.id!=="scholarship"&&(
         <div className="chat-screen">
           <div className="chat-body">
 
